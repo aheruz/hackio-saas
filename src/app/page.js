@@ -14,9 +14,9 @@ export default function Home() {
     <main>
       <Header/>
       <Features/>
+      <Pricing/>
       <Testimonial/>
       <Social/>
-      <Pricing/>
       <CTA/>
       <Footer/>
     </main>

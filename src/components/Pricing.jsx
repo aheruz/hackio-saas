@@ -8,38 +8,39 @@ const frequencies = [
 ]
 const tiers = [
   {
-    name: 'Starter',
+    name: 'Essentials',
     id: 'tier-starter',
     href: '#',
     featured: false,
     description: 'All your essential business finances, taken care of.',
-    price: { monthly: '$15', annually: '$144' },
-    mainFeatures: ['Basic invoicing', 'Easy to use accounting', 'Mutli-accounts'],
+    price: { monthly: '€15', annually: '€144' },
+    availability: '2/5',
+    mainFeatures: ['Local (País)', 'Último año (12 meses)', 'Transporte', 'Acompañamiento básico'],
   },
   {
-    name: 'Scale',
+    name: 'Premium',
     id: 'tier-scale',
     href: '#',
     featured: true,
     description: 'The best financial services for your thriving business.',
-    price: { monthly: '$60', annually: '$576' },
+    price: { monthly: '€60', annually: '€576' },
+    availability: '3/4',
     mainFeatures: [
-      'Advanced invoicing',
-      'Easy to use accounting',
-      'Mutli-accounts',
-      'Tax planning toolkit',
-      'VAT & VATMOSS filing',
-      'Free bank transfers',
+      'Continental',
+      '2-3 años',
+      'Análisis de sostenibilidad',
+      'Acompañamoiento intermedio',
     ],
   },
   {
-    name: 'Growth',
+    name: 'Executive',
     id: 'tier-growth',
     href: '#',
     featured: false,
     description: 'Convenient features to take your business to the next level.',
-    price: { monthly: '$30', annually: '$288' },
-    mainFeatures: ['Basic invoicing', 'Easy to use accounting', 'Mutli-accounts', 'Tax planning toolkit'],
+    price: { monthly: '€30', annually: '€288' },
+    availability: '2/3',
+    mainFeatures: ['Global', 'Últimos 5 años', 'Anñalisis de sostenibilidad', 'Acompañamiento completo: equipo selectivo'],
   },
 ]
 const sections = [
@@ -158,7 +159,7 @@ export default function Pricing() {
                         {tier.price[frequency.value]}
                       </p>
                       <div className="text-sm leading-5">
-                        <p className={tier.featured ? 'text-gray-900' : 'text-white'}>USD</p>
+                        <p className={tier.featured ? 'text-gray-900' : 'text-white'}>EUR</p>
                         <p
                           className={tier.featured ? 'text-gray-500' : 'text-gray-400'}
                         >{`Billed ${frequency.value}`}</p>
@@ -201,6 +202,28 @@ export default function Pricing() {
                       ))}
                     </ul>
                   </div>
+                  
+                  <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between lg:flex-col lg:items-stretch">
+                    
+                  </div>
+
+                  <div className="pt-8 flex items-center gap-x-4">
+                    <p
+                      className={classNames(
+                        tier.featured ? 'text-gray-900' : 'text-white',
+                        'text-4xl font-bold tracking-tight'
+                      )}
+                    >
+                      {tier.availability}
+                    </p>
+                    <div className="text-sm leading-5">
+                        <p className={tier.featured ? 'text-gray-900' : 'text-white'}>plazas</p>
+                        <p
+                          className={tier.featured ? 'text-gray-500' : 'text-gray-400'}
+                        >disponibles</p>
+                      </div>
+                  </div>
+
                 </div>
               </div>
             ))}
