@@ -119,8 +119,8 @@ export default function Pricing() {
               <ellipse cx={604} cy={512} fill="url(#d25c25d4-6d43-4bf9-b9ac-1842a30a4867)" rx={604} ry={512} />
               <defs>
                 <radialGradient id="d25c25d4-6d43-4bf9-b9ac-1842a30a4867">
-                  <stop stopColor="#7775D6" />
-                  <stop offset={1} stopColor="#E935C1" />
+                  <stop stopColor="#DAF7A6" />
+                  <stop offset={1} stopColor="#B3F43E" />
                 </radialGradient>
               </defs>
             </svg>
@@ -170,9 +170,9 @@ export default function Pricing() {
                       aria-describedby={tier.id}
                       className={classNames(
                         tier.featured
-                          ? 'bg-indigo-600 shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-600'
-                          : 'bg-white/10 hover:bg-white/20 focus-visible:outline-white',
-                        'rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2'
+                          ? 'bg-green shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-600 text-blue'
+                          : 'bg-white/10 hover:bg-white/20 focus-visible:outline-white text-white',
+                        'rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2'
                       )}
                     >
                       Buy this plan
