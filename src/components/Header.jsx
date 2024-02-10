@@ -77,14 +77,6 @@ export default function Header() {
                     </a>
                   ))}
                 </div>
-                <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Log in
-                  </a>
-                </div>
               </div>
             </div>
           </Dialog.Panel>
@@ -142,7 +134,7 @@ export default function Header() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-full bg-blue px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green hover:text-blue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-full bg-green-200 px-8 py-2.5 text-sm font-bold text-blue shadow-sm hover:bg-green-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Solicita una Demo
               </a>

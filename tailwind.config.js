@@ -14,7 +14,15 @@ module.exports = {
       },
       colors: {
         'blue': '#001F32',
-        'green': '#DAF7A6',
+        'green': {
+          100: '#E5FFB7',
+          200: '#DAF7A6',
+          300: '#8fc93a'
+        },
+        'brown' : {
+          100: '#926D53',
+          200: '#784212'
+        }
       },
     },
   },
