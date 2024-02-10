@@ -104,27 +104,45 @@ export default function Header() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-6 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Announcing our next round of funding.{' '}
-              <a href="#" className="font-semibold text-indigo-600">
-                <span className="absolute inset-0" aria-hidden="true" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </a>
-            </div>
+        <div className="mx-auto max-w-4xl py-32 sm:py-25 lg:py-20">
+          <div className='flex justify-center items-center mb-9'>
+            <img
+              className="max-h-16 pr-6"
+              src="/3d-casual-life-black-eyeglasses.png"
+              alt=""
+            />
+            <img
+              className="max-h-12 pr-6"
+              src="/icons8-plus-math-52.png"
+              alt=""
+            />
+            <img
+              className="max-h-14 pr-6"
+              src="/marginalia-268.png"
+              alt=""
+            />
+            <img
+              className="max-h-12 pr-6"
+              src="/icons8-equal-sign-52.png"
+              alt=""
+            />
+            <img
+              className="max-h-24"
+              src="/8bit-coin-1.png"
+              alt=""
+            />
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               Pronósticos de tendencias para gafas basado en big data
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Decisiones basadas en datos en tiempo real.
+              Traducimos tus datos en decisiones de mercado acorde a las tendencias de mercado.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-full bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-full bg-blue px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green hover:text-blue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Acceder
               </a>
