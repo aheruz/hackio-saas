@@ -5,36 +5,36 @@ const features = [
     name: 'Basado en datos',
     description:
       'Vitaminamos tus datos con estudios de tendencia de tu mercado objetivo.',
-    href: '#',
+    href: '#cta',
     icon: CloudArrowUpIcon,
   },
   {
     name: 'Cumplimiento con GDPR y SOC2',
     description:
       'Todos tus análisis de datos se procesan en entornos seguros y siguiendo SOC2',
-    href: '#',
+    href: '#cta',
     icon: LockClosedIcon,
   },
   {
     name: 'Optimiza tu margen operativo',
     description:
       'Itera sobre tus estrategias de venta y expansión de mercados basándote en datos concretos.',
-    href: '#',
+    href: '#cta',
     icon: ArrowPathIcon,
   },
 ]
 
 export default function Features() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div id="features" className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-blue">Optimiza tu margen operativo</h2>
+          <h2 className="text-base font-semibold leading-7 text-blue">Optimizamos tu margen operativo</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Descubre tendencias en tus datos
+            Descubre tendencias en tu data
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Analizamos los datos de tus canales de venta actuales.
+            Analizamos tus canales de venta actuales y los comparamos con trends.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">

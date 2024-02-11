@@ -1,8 +1,8 @@
 const navigation = {
   main: [
-    { name: 'Programas', href: '#' },
-    { name: 'Conócenos', href: '#' },
-    { name: 'Casos de éxito', href: '#' },
+    { name: 'Programas', href: '#pricing' },
+    { name: 'Conócenos', href: '#features' },
+    { name: 'Casos de éxito', href: '#testimonial' },
   ],
   social: [
     {

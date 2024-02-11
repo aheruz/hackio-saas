@@ -3,9 +3,9 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Programas', href: '#' },
-  { name: 'Conócenos', href: '#' },
-  { name: 'Casos de exito', href: '#' },
+  { name: 'Conócenos', href: '#features' },
+  { name: 'Programas', href: '#pricing' },
+  { name: 'Casos de exito', href: '#testimonial' },
 ]
 
 export default function Header() {
@@ -129,12 +129,12 @@ export default function Header() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
+                href="#cta"
                 className="rounded-md bg-green-200 px-8 py-2.5 text-sm font-bold text-blue shadow-sm hover:bg-green-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Solicita una Demo
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="#cta" className="text-sm font-semibold leading-6 text-gray-900">
                 Saber más <span aria-hidden="true">→</span>
               </a>
             </div>

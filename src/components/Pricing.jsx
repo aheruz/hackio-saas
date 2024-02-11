@@ -10,7 +10,7 @@ const tiers = [
   {
     name: 'Essentials',
     id: 'tier-starter',
-    href: '#',
+    href: '#cta',
     featured: false,
     description: 'All your essential business finances, taken care of.',
     price: { monthly: '€15', annually: '€144' },
@@ -20,7 +20,7 @@ const tiers = [
   {
     name: 'Premium',
     id: 'tier-scale',
-    href: '#',
+    href: '#cta',
     featured: true,
     description: 'The best financial services for your thriving business.',
     price: { monthly: '€60', annually: '€576' },
@@ -35,7 +35,7 @@ const tiers = [
   {
     name: 'Executive',
     id: 'tier-growth',
-    href: '#',
+    href: '#cta',
     featured: false,
     description: 'Convenient features to take your business to the next level.',
     price: { monthly: 'Custom', annually: 'Custom' },
@@ -78,7 +78,7 @@ export default function Pricing() {
   const [frequency, setFrequency] = useState(frequencies[0])
 
   return (
-    <div className="isolate overflow-hidden">
+    <div id="pricing" className="isolate overflow-hidden">
       <div className="flow-root bg-gray-900 pb-16 pt-24 sm:pt-32 lg:pb-0">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="relative z-10">
