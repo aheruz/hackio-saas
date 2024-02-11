@@ -19,8 +19,8 @@ export default function Header() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Ontrend</span>
               <p className=" font-serif text-3xl font-bold leading-tight tracking-tight text-gray-900">
-                <span className='font-thin'>ON</span>TREND
-                </p>
+              <span className='font-thin'>ON</span>TREND
+              </p>
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -47,11 +47,9 @@ export default function Header() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Ontrend</span>
-                <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
-                />
+                <p className=" font-serif text-3xl font-bold leading-tight tracking-tight text-gray-900">
+                <span className='font-thin'>ON</span>TREND
+                </p>
               </a>
               <button
                 type="button"
