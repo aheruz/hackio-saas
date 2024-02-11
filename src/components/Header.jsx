@@ -17,12 +17,10 @@ export default function Header() {
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
+              <span className="sr-only">Ontrend</span>
+              <p className=" font-serif text-3xl font-bold leading-tight tracking-tight text-gray-900">
+                <span className='font-thin'>ON</span>TREND
+                </p>
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -48,7 +46,7 @@ export default function Header() {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+                <span className="sr-only">Ontrend</span>
                 <img
                   className="h-8 w-auto"
                   src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
@@ -83,7 +81,7 @@ export default function Header() {
         </Dialog>
       </header>
 
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div className="relative isolate px-6 pt-16 sm:pt-32 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
@@ -99,27 +97,27 @@ export default function Header() {
         <div className="mx-auto max-w-4xl py-32 sm:py-25 lg:py-20">
           <div className='flex justify-center items-center mb-9'>
             <img
-              className="max-h-16 pr-6"
+              className="max-h-8 pr-2 sm:max-h-16 sm:pr-6"
               src="/3d-casual-life-black-eyeglasses.png"
               alt=""
             />
             <img
-              className="max-h-12 pr-6"
+              className="max-h-6 pr-2 sm:max-h-12 sm:pr-6"
               src="/icons8-plus-math-52.png"
               alt=""
             />
             <img
-              className="max-h-14 pr-6"
+              className="max-h-7 pr-2 sm:max-h-14 sm:pr-6"
               src="/marginalia-268.png"
               alt=""
             />
             <img
-              className="max-h-12 pr-6"
+              className="max-h-6 pr-2 sm:max-h-12 sm:pr-6"
               src="/icons8-equal-sign-52.png"
               alt=""
             />
             <img
-              className="max-h-24"
+              className="max-h-10 pr-2 sm:max-h-24"
               src="/8bit-coin-1.png"
               alt=""
             />
@@ -134,7 +132,7 @@ export default function Header() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-full bg-green-200 px-8 py-2.5 text-sm font-bold text-blue shadow-sm hover:bg-green-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-green-200 px-8 py-2.5 text-sm font-bold text-blue shadow-sm hover:bg-green-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Solicita una Demo
               </a>
