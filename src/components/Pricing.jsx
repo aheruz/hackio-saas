@@ -3,8 +3,8 @@ import { RadioGroup } from '@headlessui/react'
 import { CheckIcon, XMarkIcon } from '@heroicons/react/20/solid'
 
 const frequencies = [
-  { value: 'monthly', label: 'Monthly' },
-  { value: 'annually', label: 'Annually' },
+  { value: 'monthly', label: 'Mensual' },
+  { value: 'annually', label: 'Anual' },
 ]
 const tiers = [
   {
@@ -13,7 +13,7 @@ const tiers = [
     href: '#cta',
     featured: false,
     description: 'All your essential business finances, taken care of.',
-    price: { monthly: '€15', annually: '€144' },
+    price: { monthly: '€300', annually: '€250' },
     availability: '2/5',
     mainFeatures: ['Data local', 'Análisis últimos 12 meses', 'Acceso red de fabricantes', 'Acompañamiento básico'],
   },
@@ -23,7 +23,7 @@ const tiers = [
     href: '#cta',
     featured: true,
     description: 'The best financial services for your thriving business.',
-    price: { monthly: '€60', annually: '€576' },
+    price: { monthly: '€500', annually: '€400' },
     availability: '3/4',
     mainFeatures: [
       'Data continental',
@@ -40,7 +40,7 @@ const tiers = [
     description: 'Convenient features to take your business to the next level.',
     price: { monthly: 'Custom', annually: 'Custom' },
     availability: '2/3',
-    mainFeatures: ['Data global', 'Análisis últimos 5 años', 'Anñalisis de sostenibilidad', 'Acompañamiento completo: equipo selectivo'],
+    mainFeatures: ['Data global', 'Análisis últimos 5 años', 'Análisis de sostenibilidad', 'Acompañamiento completo: equipo selectivo'],
   },
 ]
 const sections = [
@@ -159,10 +159,10 @@ export default function Pricing() {
                       </p>
                       { tier.price[frequency.value] != 'Custom' &&
                         <div className="text-sm leading-5">
-                          <p className={tier.featured ? 'text-gray-900' : 'text-white'}>EUR</p>
+                          <p className={tier.featured ? 'text-gray-900' : 'text-white'}>EUR al mes</p>
                           <p
                             className={tier.featured ? 'text-gray-500' : 'text-gray-400'}
-                          >{`Billed ${frequency.value}`}</p>
+                          >{`Pago ${frequency.label}`} + 5% ventas generadas</p>
                         </div>
                       }
                     </div>
