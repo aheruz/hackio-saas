@@ -129,7 +129,7 @@ export default function Header() {
               Pronósticos de tendencias para gafas basado en big data
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Traducimos tus datos en decisiones de mercado acorde a las tendencias de mercado.
+            Transformamos tus datos en movidas estratégicas, sintonizadas con las tendencias del mercado.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
